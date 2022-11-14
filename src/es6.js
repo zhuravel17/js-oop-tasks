@@ -19,9 +19,10 @@ function filterUnique(array) {}
 // присмотритесь к методу .reduce
 function calculateSalaryDifference(array) {}
 
-// Реализуйте класс "словарь слов"
+// Реализуйте класс "словарь слов" (как толковый словарь)
 // класс должен быть безопасным и работать только со словами
 // присмотритесь к коллекции "Map"
+// Словарь - (string, string), и все это не null и не undefined
 // * покройте класс тестами
 class Dictionary {}
 
