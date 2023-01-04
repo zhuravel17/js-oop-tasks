@@ -26,20 +26,8 @@ function calculateSalaryDifference(array) {
     if (array.lenght === 0) {
         return false;
     }
-    let max = array.reduce(function (accumulator, value) {
-        if (accumulator < value) {
-            return value;
-        }
-        else return accumulator;
-    }, 0);
-
-    let min = array.reduce(function (accumulator, value) {
-        if (accumulator > value) {
-            return value;
-        }
-        else return accumulator;
-    }, max);
-
+    const max = array.reduce((accumulator, value) => accumulator < value ? value : accumulator, 0);
+    const min = array.reduce((accumulator, value) => accumulator > value ? value : accumulator, max);
     return max / min;
 }
    
